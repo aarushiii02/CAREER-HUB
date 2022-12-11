@@ -1,0 +1,174 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url("https://images.businessoffashion.com/site/uploads/2018/05/shutterstock_1029299632.jpg")no-repeat;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     height:100vh;
+     width: 100%;
+     
+}
+.barmenu{
+    width: 100%;
+    padding-top: 60px;
+    border: none solid black;
+    background-color: #000;
+    position: absolute;
+    box-shadow: 12px 20px 90px;
+    opacity:0.8;
+
+}
+i{
+    color: white;
+    opacity: 0.6;
+}
+
+.icons{
+    margin-left: 10px;
+    word-spacing: 28px;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    font-size: 18px;
+}
+i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+ul{
+    float: right;
+}
+.list{
+    position: absolute;
+    top: 25%;
+    left:75%;
+    font-size: 18px;
+}
+.list li{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-weight:100;
+  opacity: 0.6;
+  list-style-type: none;
+  width: 100px;
+  animation: 1s list none;
+}
+@keyframes list{
+    0%{
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    50%{
+        transform: none;
+        opacity: 0;
+    }
+    100%{
+        transform: none;
+        opacity: 0.7;
+    }
+}
+
+.list li{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-weight:100;
+  opacity: 0.6;
+  list-style-type: none;
+  width: 100px;
+}
+.list li:hover{
+    opacity: 1;
+   
+}
+
+.logo{
+	width:100px;
+	cursor:pointer;
+    margin-top: 60px;
+    margin-left: 25px;
+    animation:2.5s logo  none;
+}
+@keyframes logo{
+    0%{
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    50%{
+        transform: none;
+        opacity: 0;
+    }
+    100%{
+        transform: none;
+        opacity: 0.7;
+    }
+}
+#content{
+	color: #fff;
+	text-align: center;
+	width:100%;
+	position: absolute;
+	top:50%;
+	font-size:30px;
+	transform: translateY(-50%);
+}
+#content h1{
+	font-size: 150px;
+	margin-top: 80px;
+	font-family: 'Fredoka One', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Ubuntu Mono', monospace;
+
+}
+
+#content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+	font-family: 'Ubuntu Mono', monospace;
+}
+#button	{
+    width:200px;
+    font-size:20px;
+	padding:15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #009688;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+#span{
+	background:#009688;
+	height: 100%;
+	width:0%;
+	border-radius: 25px;
+	position: absolute;
+	left:0;
+	bottom: 0;
+	z-index:-1;
+	transition: 0.5s;
+
+}
+#button:hover span{
+	width:100%;
+}
+#button:hover{
+	border:none;
+}
+@media screen and (max-width:950px){
+    .box{
+        flex-direction:column ;
+    }
+    .barmenu{
+        flex-direction: row;
+    }
+}

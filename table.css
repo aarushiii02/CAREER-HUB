@@ -1,0 +1,36 @@
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)) ,url("images/tablebg.jpeg");
+    background-size:cover;
+
+}
+table{
+    width:1200px;
+    height:700px;
+    margin:150px 500px ;
+    text-align: center;
+    table-layout:fixed;
+    opacity:0.7;
+}
+table,tr,td{    
+    padding: 20px;
+    color:white;
+    border:1px solid black;
+    border-collapse:collapse;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(top,#3c3c32 0%,#222222 100%);
+    background:-webkit-linear-gradient(top,#3c3c3c 0%,#222222 100%);
+}
+th{
+    padding: 20px;
+    color:white;
+    border:1px solid black;
+    border-collapse:collapse;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+    background: linear-gradient(top,#3c3c32 0%,#222222 100%);
+    background:-webkit-linear-gradient(top,#3c3c3c 0%,#222222 100%);
+}
+td:hover{
+    background: orange;
+}

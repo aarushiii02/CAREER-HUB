@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN FORM</title>
+    <link rel = "stylesheet"type = "text/css" href="admin.css">
+
+    </head>
+	<script type= "text/javascript">
+		function login() {
+		var user = document.getElementById("username").value;
+		var pass = document.getElementById("password").value;
+		console.log(user);
+		console.log(pass);
+		if(user == "head" && pass == "head_24" ){
+			
+			window.open("table.html","_self");
+		} 
+		}
+		</script>
+	
+	<body>
+        <div class = background></div>
+		<div class="Login-form">
+            <img src="images/admin.jpeg.png" class="logo">
+			<h1>Admin Login</h1>
+			
+				<p>User Name</p>
+				<input type="text" name="user" placeholder="User Name" id="username" required>
+				<p>Password</p>
+				<input type="Password" name="Password"placeholder = "Password" id="password" required>
+				<button onclick="login()" id="login" >Login</button>
+				
+            
+            </div>
+	</div>
+	</body>
+
+</html>
